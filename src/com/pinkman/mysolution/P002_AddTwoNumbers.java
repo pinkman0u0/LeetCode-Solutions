@@ -13,7 +13,7 @@
 // Related Topics 链表 数学
 // 👍 4940 👎 0
 
-package com.pinkman.leetcode;
+package com.pinkman.mysolution;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -39,7 +39,7 @@ class ListNode {
     }
 }
 
-class Problem_2 {
+class LongestSubstringWithoutRepeatingCharacters {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         int n = 0;

@@ -24,12 +24,12 @@
 // Related Topics 哈希表 双指针 字符串 Sliding Window
 // 👍 4358 👎 0
 
-package com.pinkman.leetcode;
+package com.pinkman.mysolution;
 
 import java.util.HashMap;
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Problem_3 {
+class P003_LongestSubstringWithoutRepeatingCharacters {
     public static int lengthOfLongestSubstring(String s) {
         char[] chars = s.toCharArray();
         if (chars.length == 0) return 0;
@@ -40,7 +40,6 @@ class Problem_3 {
             char c = chars[i];
             if (map.containsKey(c)){
                 n = q - p > n ? q - p : n;
-                p = map.get(c) + 1 > p ? map.get(c) + 1 : p;
             }
             map.put(c,q);
         }
