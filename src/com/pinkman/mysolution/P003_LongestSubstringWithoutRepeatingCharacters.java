@@ -39,11 +39,11 @@ class P003_LongestSubstringWithoutRepeatingCharacters {
             q = i;
             char c = chars[i];
             if (map.containsKey(c)){
-                n = q - p > n ? q - p : n;
+                n = Math.max(q - p, n);
             }
-            map.put(c,q);
+            map.put(c, q);
         }
-        return q - p + 1 > n ? q - p + 1 : n;
+        return Math.max(q - p + 1, n);
     }
 
     public static void main(String[] args) {
